@@ -6,18 +6,32 @@ interface HeroProps {
 }
 
 export function Hero({ onStartQuiz }: HeroProps) {
+  const handleStartQuiz = () => {
+    // First scroll to the level selection section
+    const levelSection = document.querySelector('.level-selection');
+    if (levelSection) {
+      levelSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    
+    // Then trigger the quiz start
+    onStartQuiz();
+  };
+
   return (
     <div className="relative bg-gradient-to-b from-blue-50 to-white py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          Welcome to Quzzzz-Plzzzzz!
+            Welcome to Quzzzz-Plzzzzz!
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-          Explore this interactive extension of our main app, Learn Your Rights, your rights fun and engaging for kids and families alike.
+            Explore this interactive extension of our main app, Learn Your Rights, your rights fun and engaging for kids and families alike.
           </p>
           <button 
-            onClick={onStartQuiz}
+            onClick={handleStartQuiz}
             className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition flex items-center gap-2"
           >
             Start Quiz
