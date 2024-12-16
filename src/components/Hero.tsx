@@ -11,11 +11,10 @@ export function Hero({ onStartQuiz }: HeroProps) {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Learn Your Rights: Quiz Fun for Kids
+          Welcome to Quzzzz-Plzzzzz!
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Embark on an exciting journey to discover your rights through interactive games and quizzes! 
-            Perfect for curious minds of all ages.
+          Explore this interactive extension of our main app, Learn Your Rights, your rights fun and engaging for kids and families alike.
           </p>
           <button 
             onClick={onStartQuiz}

@@ -40,11 +40,12 @@ function App() {
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+              <h3 className="font-bold text-lg mb-4">Contributors</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Home</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Parent Guide</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Contact</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Om Sathawane</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Yadnesh Pande</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Shivam Naik </a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Sanket Padgahne </a></li>
               </ul>
             </div>
             <div>
